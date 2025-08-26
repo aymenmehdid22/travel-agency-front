@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Destinations | GoExplore Travel Agency</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+     <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/destination.css">
+    </head>
+<body>
+    <!-- Scroll to top button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Go<span>Explore</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="destination.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="package.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-outline-custom" id="book-btn5" href="travel.html">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Top Destinations</h1>
+                <p class="lead">Discover breathtaking locations around the globe handpicked by our travel experts</p>
+                <a href="#" class="btn btn-primary-custom mt-3">Explore All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter/Search Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Search destinations...">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <select class="form-select" style="height: 55px; border-radius: 50px; border: 2px solid var(--primary);">
+                        <option selected>Sort By: Popularity</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Alphabetical</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <h5 class="mb-3">Filter by Category:</h5>
+                <div class="category-filter">
+                    <button class="category-btn active">All Destinations</button>
+                    <button class="category-btn">Beach & Sun</button>
+                    <button class="category-btn">Adventure</button>
+                    <button class="category-btn">Culture & History</button>
+                    <button class="category-btn">Romantic</button>
+                    <button class="category-btn">Wildlife</button>
+                    <button class="category-btn">Mountains</button>
+                    <button class="category-btn">City Tours</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp">
+                    <div class="destination-card">
+                        <div class="destination-tag">Popular</div>
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bali" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Bali, Indonesia</h5>
+                            <p>Experience tropical paradise with stunning beaches and vibrant culture.</p>
+                            <div class="destination-price">From $899</div>
+                            <a href="#" class="btn btn-outline-custom w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="destination-card">
+                        <div class="destination-tag">Best Seller</div>
+                        <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Paris" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Paris, France</h5>
+                            <p>The city of lights, romance, and world-class cuisine awaits you.</p>
+                            <div class="destination-price">From $1,299</div>
+                            <a href="#" class="btn btn-outline-custom w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tokyo" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Tokyo, Japan</h5>
+                            <p>Where ancient traditions meet cutting-edge technology.</p>
+                            <div class="destination-price">From $1,599</div>
+                            <a href="#" class="btn btn-outline-custom w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="destination-card">
+                        <div class="destination-tag">Popular</div>
+                        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Santorini" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Santorini, Greece</h5>
+                            <p>Stunning white buildings against the deep blue Aegean Sea.</p>
+                            <div class="destination-price">From $1,199</div>
+                            <a href="#" class="btn btn-outline-custom w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="New York" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">New York, USA</h5>
+                            <p>The city that never sleeps with endless attractions and energy.</p>
+                            <div class="destination-price">From $1,099</div>
+                            <a href="#" class="btn btn-outline-custom w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="destination-card">
+                        <div class="destination-tag">New</div>
+                        <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bora Bora" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Bora Bora, Tahiti</h5>
+                            <p>Crystal clear waters and overwater bungalows in paradise.</p>
+                            <div class="destination-price">From $2,499</div>
+                            <a href="#" class="btn btn-outline-custom w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- View by Region -->
+    <section class="region-section py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">View by Region</h2>
+                    <p>Explore destinations by geographical region</p>
+                </div>
+            </div>
+            
+            <div class="swiper region-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="region-card">
+                            <div class="region-icon">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <h4>Caribbean</h4>
+                            <p>25 Destinations</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="region-card">
+                            <div class="region-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h4>Europe</h4>
+                            <p>38 Destinations</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="region-card">
+                            <div class="region-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h4>Asia</h4>
+                            <p>42 Destinations</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="region-card">
+                            <div class="region-icon">
+                                <i class="fas fa-globe-africa"></i>
+                            </div>
+                            <h4>Africa</h4>
+                            <p>18 Destinations</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="region-card">
+                            <div class="region-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <h4>Oceania</h4>
+                            <p>15 Destinations</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="region-card">
+                            <div class="region-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h4>South America</h4>
+                            <p>22 Destinations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="cta-section rounded-4">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">Ready for Your Next Adventure?</h2>
+                        <p class="mb-5">Let our travel experts create the perfect itinerary for your dream vacation</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#" class="btn btn-primary-custom">Book Now</a>
+                            <a href="#" class="btn btn-outline-custom">View Packages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Get Travel Inspiration & Exclusive Deals</h2>
+                    <p class="mb-5">Subscribe to our newsletter and be the first to know about new destinations and special offers</p>
+                    
+                    <form class="newsletter-form row g-0">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100 h-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">GoExplore</h3>
+                    <p>Creating unforgettable travel experiences since 2010. We specialize in crafting personalized journeys that go beyond the ordinary.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Destinations</a>
+                        <a href="#">Packages</a>
+                        <a href="#">Special Offers</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Booking Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-links">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@goexplore.com</p>
+                        <p><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 GoExplore Travel Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize WOW.js for scroll animations
+        new WOW().init();
+        
+        // Initialize Region Swiper
+        const regionSwiper = new Swiper('.region-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                992: {
+                    slidesPerView: 4
+                },
+                1200: {
+                    slidesPerView: 5
+                }
+            }
+        });
+        
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+            
+            // Show/hide scroll-to-top button
+            if ($(this).scrollTop() > 300) {
+                $('.scroll-top').addClass('active');
+            } else {
+                $('.scroll-top').removeClass('active');
+            }
+        });
+        
+        // Scroll to top functionality
+        $('.scroll-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+        
+        // Smooth scrolling for anchor links
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top - 70,
+                },
+                500,
+                'linear'
+            );
+        });
+        
+        // Category filter buttons
+        $('.category-btn').click(function() {
+            $('.category-btn').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+</body>
+</html>

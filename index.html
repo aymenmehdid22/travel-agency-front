@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoExplore - Premium Travel Experiences</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Scroll to top button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Go<span>Explore</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destination.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="package.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-outline-custom book-now-btn" id="book-btn4" href="travel.html">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content wow animate__animated animate__fadeInUp">
+                <h1>Discover Amazing Places Around The World</h1>
+                <p>Experience the journey of a lifetime with GoExplore. We create unforgettable travel experiences tailored just for you.</p>
+                <a href="#" class="btn btn-primary-custom me-2">Explore Destinations</a>
+                <a href="#" class="btn btn-outline-custom">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Popular Destinations</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Explore our most sought-after destinations that travelers love</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bali" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Bali, Indonesia</h5>
+                            <p>Experience tropical paradise with stunning beaches and vibrant culture.</p>
+                            <a href="#" class="btn btn-sm btn-outline-custom explore-btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Paris" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Paris, France</h5>
+                            <p>The city of lights, romance, and world-class cuisine awaits you.</p>
+                            <a href="#" class="btn btn-sm btn-outline-custom explore-btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tokyo" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Tokyo, Japan</h5>
+                            <p>Where ancient traditions meet cutting-edge technology.</p>
+                            <a href="#" class="btn btn-sm btn-outline-custom explore-btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Santorini" class="destination-img">
+                        <div class="destination-body">
+                            <h5 class="destination-title">Santorini, Greece</h5>
+                            <p>Stunning white buildings against the deep blue Aegean Sea.</p>
+                            <a href="#" class="btn btn-sm btn-outline-custom explore-btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Packages -->
+    <section class="py-5 my-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Top Travel Packages</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Handpicked experiences for your next adventure</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInLeft">
+                    <div class="package-card">
+                        <img src="/images/italia.jpg" alt="Italian Escape" class="package-img">
+                        <div class="package-body">
+                            <h4>Italian Escape</h4>
+                            <p>10 days exploring Rome, Florence, and Venice with luxury accommodations.</p>
+                            <div class="package-price">$2,499</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                    <div class="package-card">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tropical Paradise" class="package-img">
+                        <div class="package-body">
+                            <h4>Tropical Paradise</h4>
+                            <p>7 days in Bali with private villa, spa treatments, and island tours.</p>
+                            <div class="package-price">$1,899</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
+                    <div class="package-card">
+                        <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Japan Adventure" class="package-img">
+                        <div class="package-body">
+                            <h4>Japan Adventure</h4>
+                            <p>14 days exploring Tokyo, Kyoto, and Osaka with cultural experiences.</p>
+                            <div class="package-price">$3,299</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Why Choose GoExplore</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">We go the extra mile to make your journey unforgettable</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Expert Agents</h4>
+                        <p>Our travel specialists have visited 100+ destinations and know the best experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Safe Travel</h4>
+                        <p>Comprehensive travel insurance and 24/7 support for your peace of mind.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4>Custom Plans</h4>
+                        <p>Tailor-made itineraries designed specifically for your interests and needs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h4>Best Value</h4>
+                        <p>Exclusive deals and partnerships ensure you get the most for your money.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-5 my-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">What Our Travelers Say</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Don't just take our word for it - hear from our satisfied customers</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="testimonial-card wow animate__animated animate__fadeIn">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Our trip to Bali was absolutely perfect! GoExplore took care of every detail, from airport transfers to amazing villa accommodations. The personalized itinerary included unique experiences we would never have found on our own."</p>
+                        <div class="client-info">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson" class="client-img">
+                            <div>
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <p class="mb-0">Bali Adventure Package</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card mt-4 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Japan tour exceeded all our expectations. Our guide was incredibly knowledgeable and helped us navigate the cultural differences effortlessly. The food experiences were a highlight we'll never forget!"</p>
+                        <div class="client-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="client-img">
+                            <div>
+                                <h5 class="mb-0">Michael Chen</h5>
+                                <p class="mb-0">Japan Cultural Tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow animate__animated animate__fadeIn">
+                    <h2 class="mb-4">Get Travel Inspiration & Exclusive Deals</h2>
+                    <p class="mb-5">Subscribe to our newsletter and be the first to know about new destinations and special offers</p>
+                    
+                    <form class="newsletter-form row g-0">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100 h-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">GoExplore</h3>
+                    <p>Creating unforgettable travel experiences since 2010. We specialize in crafting personalized journeys that go beyond the ordinary.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="destination.html">Destinations</a>
+                        <a href="package.html">Packages</a>
+                        <a href="#">Special Offers</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Booking Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-links">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@goexplore.com</p>
+                        <p><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 GoExplore Travel Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <script>
+        // Initialize WOW.js for scroll animations
+        new WOW().init();
+        
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+            
+            // Show/hide scroll-to-top button
+            if ($(this).scrollTop() > 300) {
+                $('.scroll-top').addClass('active');
+            } else {
+                $('.scroll-top').removeClass('active');
+            }
+        });
+        
+        // Scroll to top functionality
+        $('.scroll-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+        
+        // Smooth scrolling for anchor links
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top - 70,
+                },
+                500,
+                'linear'
+            );
+        });
+    </script>
+</body>
+</html>

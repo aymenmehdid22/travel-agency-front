@@ -1,0 +1,47 @@
+{
+  "en": {
+    "title": "GoExplore - Premium Travel Experiences",
+    "navbar": {
+      "home": "Home",
+      "destinations": "Destinations",
+      "packages": "Packages",
+      "tours": "Tours",
+      "contact": "Contact",
+      "book": "Book Now"
+    },
+    "hero": {
+      "title": "Discover Amazing Places Around The World",
+      "subtitle": "Experience the journey of a lifetime with GoExplore. We create unforgettable travel experiences tailored just for you."
+    }
+  },
+  "fr": {
+    "title": "GoExplore - Expériences de Voyage Premium",
+    "navbar": {
+      "home": "Accueil",
+      "destinations": "Destinations",
+      "packages": "Forfaits",
+      "tours": "Circuits",
+      "contact": "Contact",
+      "book": "Réserver"
+    },
+    "hero": {
+      "title": "Découvrez des endroits incroyables à travers le monde",
+      "subtitle": "Vivez le voyage d'une vie avec GoExplore. Nous créons des expériences de voyage inoubliables sur mesure pour vous."
+    }
+  },
+  "ar": {
+    "title": "GoExplore - تجارب سفر مميزة",
+    "navbar": {
+      "home": "الرئيسية",
+      "destinations": "الوجهات",
+      "packages": "الباقات",
+      "tours": "الجولات",
+      "contact": "اتصل بنا",
+      "book": "احجز الآن"
+    },
+    "hero": {
+      "title": "اكتشف أماكن مذهلة حول العالم",
+      "subtitle": "اختبر رحلة العمر مع GoExplore. نصنع تجارب سفر لا تنسى مصممة خصيصًا لك."
+    }
+  }
+}

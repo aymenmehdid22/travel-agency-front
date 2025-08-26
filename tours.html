@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoExplore - Premium Travel Experiences</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/tours.css">
+</head>
+<body>
+    <!-- Scroll to top button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Go<span>Explore</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destination.html">Destinations</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="package.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tours.html">Tours</a>
+                        </li>
+                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-outline-custom book-now-btn" id="book-btn" href="travel.html">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content wow animate__animated animate__fadeInUp">
+                <h1>Explore Our Tours</h1>
+                <p>Discover handcrafted experiences with expert guides, curated itineraries, and unforgettable adventures.</p>
+                <a href="#tours" class="btn btn-primary-custom me-2">Browse Tours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="container" id="tours">
+        <div class="filter-section wow animate__animated animate__fadeIn">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="filter-group">
+                        <label>Destination</label>
+                        <select class="form-select">
+                            <option>All Destinations</option>
+                            <option>Asia</option>
+                            <option>Europe</option>
+                            <option>Africa</option>
+                            <option>North America</option>
+                            <option>South America</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <div class="tag-filter">
+                            <button class="tag-btn active">All</button>
+                            <button class="tag-btn">Adventure</button>
+                            <button class="tag-btn">Beach</button>
+                            <button class="tag-btn">Cultural</button>
+                            <button class="tag-btn">Desert</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="filter-group">
+                        <label>Duration</label>
+                        <div class="tag-filter">
+                            <button class="tag-btn">Weekend</button>
+                            <button class="tag-btn active">3-5 Days</button>
+                            <button class="tag-btn">6-7 Days</button>
+                            <button class="tag-btn">+7 Days</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <input type="range" class="form-range" min="0" max="100000" step="5000">
+                        <div class="d-flex justify-content-between">
+                            <span>0 DZD</span>
+                            <span>100,000 DZD</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="filter-group">
+                        <label>Sort By</label>
+                        <select class="form-select">
+                            <option>Popularity</option>
+                            <option>Newest First</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="filter-group">
+                        <label>Search Tours</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search by keyword...">
+                            <button class="btn btn-primary-custom" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary-custom w-100 mt-3">
+                        <i class="fas fa-filter me-2"></i> Apply Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Listings -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">Our Tours Collection</h2>
+                    <p>Handpicked experiences for every type of traveler</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp">
+                    <div class="tour-card">
+                        <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Japan Adventure" class="tour-img">
+                        <div class="tour-body">
+                            <h3 class="tour-title">Japan Cultural Journey</h3>
+                            <div class="tour-meta">
+                                <div class="tour-price">From 35,000 DZD</div>
+                                <div class="tour-duration">
+                                    <i class="far fa-clock"></i> 7 Days / 6 Nights
+                                </div>
+                            </div>
+                            <p>Discover the perfect blend of ancient traditions and modern wonders in Tokyo, Kyoto, and Osaka.</p>
+                            <div class="tour-tags">
+                                <span class="tour-tag">Cultural</span>
+                                <span class="tour-tag">Historical</span>
+                                <span class="tour-tag">City</span>
+                            </div>
+                            <div class="tour-actions">
+                                <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="tour-card">
+                        <img src="/images/sahara.jpg" alt="Sahara Desert" class="tour-img">
+                        <div class="tour-body">
+                            <h3 class="tour-title">Sahara Desert Expedition</h3>
+                            <div class="tour-meta">
+                                <div class="tour-price">From 28,500 DZD</div>
+                                <div class="tour-duration">
+                                    <i class="far fa-clock"></i> 4 Days / 3 Nights
+                                </div>
+                            </div>
+                            <p>Experience the magic of the Sahara with camel treks, desert camps, and breathtaking dunes.</p>
+                            <div class="tour-tags">
+                                <span class="tour-tag">Adventure</span>
+                                <span class="tour-tag">Desert</span>
+                                <span class="tour-tag">Camping</span>
+                            </div>
+                            <div class="tour-actions">
+                                <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="tour-card">
+                        <img src="/images/bali.jpg" alt="Bali" class="tour-img">
+                        <div class="tour-body">
+                            <h3 class="tour-title">Bali Tropical Paradise</h3>
+                            <div class="tour-meta">
+                                <div class="tour-price">From 42,000 DZD</div>
+                                <div class="tour-duration">
+                                    <i class="far fa-clock"></i> 8 Days / 7 Nights
+                                </div>
+                            </div>
+                            <p>Relax on stunning beaches, explore lush jungles, and immerse in Balinese culture.</p>
+                            <div class="tour-tags">
+                                <span class="tour-tag">Beach</span>
+                                <span class="tour-tag">Relaxation</span>
+                                <span class="tour-tag">Luxury</span>
+                            </div>
+                            <div class="tour-actions">
+                                <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="tour-card">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Swiss Alps" class="tour-img">
+                        <div class="tour-body">
+                            <h3 class="tour-title">Swiss Alps Adventure</h3>
+                            <div class="tour-meta">
+                                <div class="tour-price">From 58,000 DZD</div>
+                                <div class="tour-duration">
+                                    <i class="far fa-clock"></i> 6 Days / 5 Nights
+                                </div>
+                            </div>
+                            <p>Hike through majestic mountains, enjoy panoramic views, and experience alpine culture.</p>
+                            <div class="tour-tags">
+                                <span class="tour-tag">Mountains</span>
+                                <span class="tour-tag">Hiking</span>
+                                <span class="tour-tag">Nature</span>
+                            </div>
+                            <div class="tour-actions">
+                                <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="tour-card">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Greek Islands" class="tour-img">
+                        <div class="tour-body">
+                            <h3 class="tour-title">Greek Island Hopping</h3>
+                            <div class="tour-meta">
+                                <div class="tour-price">From 45,500 DZD</div>
+                                <div class="tour-duration">
+                                    <i class="far fa-clock"></i> 9 Days / 8 Nights
+                                </div>
+                            </div>
+                            <p>Explore Santorini, Mykonos, and Crete with luxury accommodations and private tours.</p>
+                            <div class="tour-tags">
+                                <span class="tour-tag">Island</span>
+                                <span class="tour-tag">Luxury</span>
+                                <span class="tour-tag">Cruise</span>
+                            </div>
+                            <div class="tour-actions">
+                                <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="tour-card">
+                        <img src="/images/Egypt-Tours.webp" alt="Egypt" class="tour-img">
+                        <div class="tour-body">
+                            <h3 class="tour-title">Egyptian Wonders Tour</h3>
+                            <div class="tour-meta">
+                                <div class="tour-price">From 32,000 DZD</div>
+                                <div class="tour-duration">
+                                    <i class="far fa-clock"></i> 7 Days / 6 Nights
+                                </div>
+                            </div>
+                            <p>Walk in the footsteps of pharaohs and discover ancient pyramids and temples.</p>
+                            <div class="tour-tags">
+                                <span class="tour-tag">Historical</span>
+                                <span class="tour-tag">Cultural</span>
+                                <span class="tour-tag">Archaeology</span>
+                            </div>
+                            <div class="tour-actions">
+                                <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary-custom">View All Tours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tours Slider -->
+    <section class="featured-tours">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Featured Tours</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Our most popular experiences loved by travelers</p>
+                </div>
+            </div>
+            
+            <div class="swiper featured-tours-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tropical Paradise" class="tour-img">
+                            <div class="tour-body">
+                                <h3 class="tour-title">Maldives Luxury Escape</h3>
+                                <div class="tour-meta">
+                                    <div class="tour-price">From 75,000 DZD</div>
+                                    <div class="tour-duration">
+                                        <i class="far fa-clock"></i> 5 Days / 4 Nights
+                                    </div>
+                                </div>
+                                <p>Private overwater bungalow, gourmet dining, and turquoise waters await you.</p>
+                                <div class="tour-tags">
+                                    <span class="tour-tag">Luxury</span>
+                                    <span class="tour-tag">Beach</span>
+                                    <span class="tour-tag">Romantic</span>
+                                </div>
+                                <div class="tour-actions">
+                                    <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                    <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Kyoto" class="tour-img">
+                            <div class="tour-body">
+                                <h3 class="tour-title">Kyoto Cultural Immersion</h3>
+                                <div class="tour-meta">
+                                    <div class="tour-price">From 38,500 DZD</div>
+                                    <div class="tour-duration">
+                                        <i class="far fa-clock"></i> 4 Days / 3 Nights
+                                    </div>
+                                </div>
+                                <p>Temples, tea ceremonies, and traditional Japanese gardens in the cultural heart of Japan.</p>
+                                <div class="tour-tags">
+                                    <span class="tour-tag">Cultural</span>
+                                    <span class="tour-tag">Historical</span>
+                                    <span class="tour-tag">Gastronomy</span>
+                                </div>
+                                <div class="tour-actions">
+                                    <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                    <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Iceland" class="tour-img">
+                            <div class="tour-body">
+                                <h3 class="tour-title">Iceland Northern Lights</h3>
+                                <div class="tour-meta">
+                                    <div class="tour-price">From 52,000 DZD</div>
+                                    <div class="tour-duration">
+                                        <i class="far fa-clock"></i> 6 Days / 5 Nights
+                                    </div>
+                                </div>
+                                <p>Chase the aurora borealis, soak in geothermal pools, and explore glaciers.</p>
+                                <div class="tour-tags">
+                                    <span class="tour-tag">Adventure</span>
+                                    <span class="tour-tag">Nature</span>
+                                    <span class="tour-tag">Photography</span>
+                                </div>
+                                <div class="tour-actions">
+                                    <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                                    <a href="#" class="btn btn-outline-custom w-100">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Why Choose Our Tours</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">We go beyond the ordinary to create extraordinary experiences</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h4>Local Expert Guides</h4>
+                        <p>Knowledgeable locals who bring destinations to life with authentic insights.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h4>Hotel + Transport Included</h4>
+                        <p>Seamless travel with premium accommodations and comfortable transport.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>24/7 WhatsApp Support</h4>
+                        <p>Immediate assistance anytime, anywhere during your journey.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h4>Flexible Payment Options</h4>
+                        <p>Pay with CCP, BaridiMob, Cash on Delivery, or Credit Card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Special Offers</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Limited-time deals for unforgettable experiences</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 wow animate__animated animate__fadeInLeft">
+                    <div class="special-offer-card">
+                        <span class="offer-badge">Group Discount</span>
+                        <h3>Group Travel Deals</h3>
+                        <p>Save up to 25% when traveling with 4 or more people. Perfect for families and friends!</p>
+                        <ul class="mt-4">
+                            <li>Free room upgrade for group leader</li>
+                            <li>Private transportation included</li>
+                            <li>Customized group activities</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-custom mt-4" style="background: white; color: var(--text-color);">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 wow animate__animated animate__fadeInRight">
+                    <div class="special-offer-card">
+                        <span class="offer-badge">Seasonal Deal</span>
+                        <h3>Early Bird Discount</h3>
+                        <p>Book 90 days in advance and save 20% on selected tours. Plan ahead and save!</p>
+                        <ul class="mt-4">
+                            <li>Flexible booking options</li>
+                            <li>Free date changes up to 30 days before</li>
+                            <li>Priority access to popular tours</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-custom mt-4" style="background: white; color: var(--text-color);">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Traveler Testimonials</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Hear from adventurers who've explored with us</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 wow animate__animated animate__fadeIn">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Our Sahara Desert tour exceeded all expectations. The attention to detail, knowledgeable guide, and stunning desert camp made this an unforgettable experience. We felt completely immersed in the local culture."</p>
+                        <div class="client-info">
+                            <img src="https://www.responsiblevacation.com/imagesclient/L_233277.jpg" alt="Karim B." class="client-img">
+                            <div>
+                                <h5 class="mb-0">Karim Benali</h5>
+                                <p class="mb-0">Sahara Desert Expedition</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Japan tour was a perfect blend of culture, history, and modern experiences. Our guide helped us navigate Tokyo like locals, and the traditional ryokan stay was a highlight. Will definitely book with GoExplore again!"</p>
+                        <div class="client-info">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Leila M." class="client-img">
+                            <div>
+                                <h5 class="mb-0">Leila Mazari</h5>
+                                <p class="mb-0">Japan Cultural Journey</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow animate__animated animate__fadeIn">
+                    <h2 class="mb-4">Customize Your Dream Tour</h2>
+                    <p class="mb-5">Have specific travel needs? Our experts will create a personalized itinerary just for you</p>
+                    <a href="#" class="btn btn-primary-custom me-2">Request a Quote</a>
+                    <a href="#" class="btn btn-outline-custom">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow animate__animated animate__fadeIn">
+                    <h2 class="mb-4">Get Travel Inspiration & Exclusive Deals</h2>
+                    <p class="mb-5">Subscribe to our newsletter and be the first to know about new destinations and special offers</p>
+                    
+                    <form class="newsletter-form row g-0">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100 h-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">GoExplore</h3>
+                    <p>Creating unforgettable travel experiences since 2010. We specialize in crafting personalized journeys that go beyond the ordinary.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Destinations</a>
+                        <a href="#">Tours</a>
+                        <a href="#">Special Offers</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Booking Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-links">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@goexplore.com</p>
+                        <p><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 GoExplore Travel Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize WOW.js for scroll animations
+        new WOW().init();
+        
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+            
+            // Show/hide scroll-to-top button
+            if ($(this).scrollTop() > 300) {
+                $('.scroll-top').addClass('active');
+            } else {
+                $('.scroll-top').removeClass('active');
+            }
+        });
+        
+        // Scroll to top functionality
+        $('.scroll-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+        
+        // Smooth scrolling for anchor links
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top - 70,
+                },
+                500,
+                'linear'
+            );
+        });
+        
+        // Initialize Swiper for featured tours
+        const swiper = new Swiper('.featured-tours-slider', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+        
+        // Tag filter functionality
+        $('.tag-btn').click(function() {
+            $('.tag-btn').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip | GoExplore Travel</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Flatpickr for datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- Style css -->
+   <link rel="stylesheet" href="./css/travel.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Go<span>Explore</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destination.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="package.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tours.html">Booking</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-outline-custom book-now-btn" id="book-btn3" href="tours.html">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="booking-hero">
+        <div class="container">
+            <div class="hero-content wow animate__animated animate__fadeInUp">
+                <h1>Book Your Dream Vacation</h1>
+                <p>Complete the form below to confirm your adventure with GoExplore</p>
+                <a href="#booking-form" class="btn btn-primary-custom me-2">Start Booking</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Secure Your Adventure</h2>
+                    <p class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Fill in your details to reserve your spot</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <div class="booking-container wow animate__animated animate__fadeInLeft">
+                        <div class="booking-card">
+                            <form id="bookingForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="fullName" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your full name.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email address.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number (Algerian Format) *</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="05 00 00 00 00" pattern="(0[5-7]{1}[0-9]{1})([0-9]{2}){4}" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid Algerian phone number (e.g., 05 00 00 00 00).
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="destination" class="form-label">Destination *</label>
+                                        <select class="form-select" id="destination" required>
+                                            <option value="" selected disabled>Select a destination</option>
+                                            <option value="bali">Bali, Indonesia</option>
+                                            <option value="paris">Paris, France</option>
+                                            <option value="tokyo">Tokyo, Japan</option>
+                                            <option value="santorini">Santorini, Greece</option>
+                                            <option value="rome">Rome, Italy</option>
+                                            <option value="barcelona">Barcelona, Spain</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a destination.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="package" class="form-label">Tour Package *</label>
+                                        <select class="form-select" id="package" required>
+                                            <option value="" selected disabled>Select a package</option>
+                                            <option value="italy">Italian Escape - 2,499 DA</option>
+                                            <option value="bali">Tropical Paradise - 1,899 DA</option>
+                                            <option value="japan">Japan Adventure - 3,299 DA</option>
+                                            <option value="greece">Greek Islands Tour - 2,799 DA</option>
+                                            <option value="spain">Spanish Fiesta - 2,199 DA</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a tour package.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="travelers" class="form-label">Number of Travelers *</label>
+                                        <select class="form-select" id="travelers" required>
+                                            <option value="" selected disabled>Select number</option>
+                                            <option value="1">1 Traveler</option>
+                                            <option value="2">2 Travelers</option>
+                                            <option value="3">3 Travelers</option>
+                                            <option value="4">4 Travelers</option>
+                                            <option value="5">5+ Travelers</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select number of travelers.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="startDate" class="form-label">Travel Start Date *</label>
+                                        <input type="text" class="form-control" id="startDate" placeholder="Select start date" required>
+                                        <div class="invalid-feedback">
+                                            Please select a start date.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="endDate" class="form-label">Travel End Date *</label>
+                                        <input type="text" class="form-control" id="endDate" placeholder="Select end date" required>
+                                        <div class="invalid-feedback">
+                                            Please select an end date.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <label class="form-label">Preferred Payment Method *</label>
+                                        <div class="d-flex flex-wrap gap-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="ccp" value="ccp" required>
+                                                <label class="form-check-label" for="ccp">
+                                                    CCP
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="baridimob" value="baridimob">
+                                                <label class="form-check-label" for="baridimob">
+                                                    BaridiMob
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="cash" value="cash">
+                                                <label class="form-check-label" for="cash">
+                                                    Cash at Office
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please select a payment method.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <label for="notes" class="form-label">Special Requests</label>
+                                        <textarea class="form-control" id="notes" rows="4" placeholder="Dietary requirements, accessibility needs, room preferences, etc."></textarea>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                I accept the <a href="#" class="text-primary-custom">Terms & Conditions</a> and <a href="#" class="text-primary-custom">Privacy Policy</a>
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree before submitting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12 mt-4">
+                                        <button class="btn btn-primary-custom w-100 py-3" type="submit">Confirm Booking</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="summary-card wow animate__animated animate__fadeInRight">
+                        <h3 class="summary-title">Booking Summary</h3>
+                        
+                        <div class="summary-item">
+                            <span>Tour Package:</span>
+                            <span id="summary-package">None selected</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span>Destination:</span>
+                            <span id="summary-destination">None selected</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span>Travel Dates:</span>
+                            <span id="summary-dates">Not selected</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span>Travelers:</span>
+                            <span id="summary-travelers">0</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span>Price per person:</span>
+                            <span id="summary-price">0 DA</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span>Discount:</span>
+                            <span id="summary-discount">0 DA</span>
+                        </div>
+                        
+                        <div class="summary-total">
+                            <span>Total:</span>
+                            <span id="summary-total">0 DA</span>
+                        </div>
+                        
+                        <div class="support-info">
+                            <h5><i class="fas fa-headset me-2"></i>Need Help?</h5>
+                            <p class="mb-1"><i class="fab fa-whatsapp me-2"></i> +213 555 123 456</p>
+                            <p class="mb-0"><i class="fas fa-phone me-2"></i> +213 21 123 456</p>
+                            <p class="mt-3 mb-0 small">Our support team is available 24/7 to assist you with your booking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fas fa-check-circle me-2"></i>
+                <strong class="me-auto">Booking Confirmed!</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <p>Your trip has been successfully booked! We've sent a confirmation to your email.</p>
+                <p class="mb-0">Thank you for choosing GoExplore!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">GoExplore</h3>
+                    <p>Creating unforgettable travel experiences since 2010. We specialize in crafting personalized journeys that go beyond the ordinary.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Destinations</a>
+                        <a href="#">Packages</a>
+                        <a href="#">Special Offers</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Booking Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-links">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@goexplore.com</p>
+                        <p><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 GoExplore Travel Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <script>
+        // Initialize WOW.js for scroll animations
+        new WOW().init();
+        
+        // Initialize date picker
+        flatpickr("#startDate", {
+            minDate: "today",
+            dateFormat: "d M Y",
+            altInput: true,
+            altFormat: "F j, Y",
+            placeholder: "Select start date"
+        });
+        
+        flatpickr("#endDate", {
+            minDate: "today",
+            dateFormat: "d M Y",
+            altInput: true,
+            altFormat: "F j, Y",
+            placeholder: "Select end date"
+        });
+        
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+        
+        // Update booking summary
+        function updateSummary() {
+            const packageSelect = document.getElementById('package');
+            const destinationSelect = document.getElementById('destination');
+            const travelersSelect = document.getElementById('travelers');
+            const startDate = document.getElementById('startDate');
+            const endDate = document.getElementById('endDate');
+            
+            // Package info
+            if (packageSelect.value) {
+                const packageText = packageSelect.options[packageSelect.selectedIndex].text;
+                const packagePrice = packageText.match(/\$([\d,]+)/)[1].replace(/,/g, '');
+                document.getElementById('summary-package').textContent = packageText.split(' - ')[0];
+                document.getElementById('summary-price').textContent = 'DA' + packagePrice;
+            } else {
+                document.getElementById('summary-package').textContent = 'None selected';
+                document.getElementById('summary-price').textContent = '0 DA';
+            }
+            
+            // Destination
+            if (destinationSelect.value) {
+                document.getElementById('summary-destination').textContent = 
+                    destinationSelect.options[destinationSelect.selectedIndex].text;
+            } else {
+                document.getElementById('summary-destination').textContent = 'None selected';
+            }
+            
+            // Travelers
+            if (travelersSelect.value) {
+                const numTravelers = parseInt(travelersSelect.value);
+                document.getElementById('summary-travelers').textContent = numTravelers;
+                
+                // Apply discount for multiple travelers
+                const packagePrice = parseFloat(document.getElementById('summary-price').textContent.replace('$', ''));
+                let total = numTravelers * packagePrice;
+                let discount = 0;
+                
+                if (numTravelers >= 3) {
+                    discount = total * 0.1; // 10% discount for 3+ travelers
+                    total -= discount;
+                    document.getElementById('summary-discount').textContent = '-DA' + discount.toFixed(2);
+                } else {
+                    document.getElementById('summary-discount').textContent = '0 DA';
+                }
+                
+                document.getElementById('summary-total').textContent = 'DA' + total.toFixed(2);
+            } else {
+                document.getElementById('summary-travelers').textContent = '0 DA';
+                document.getElementById('summary-discount').textContent = '0 DA';
+                document.getElementById('summary-total').textContent = '0 DA';
+            }
+            
+            // Dates
+            if (startDate.value && endDate.value) {
+                document.getElementById('summary-dates').textContent = 
+                    `${startDate.value} to ${endDate.value}`;
+            } else if (startDate.value) {
+                document.getElementById('summary-dates').textContent = 
+                    `${startDate.value} (end date not set)`;
+            } else {
+                document.getElementById('summary-dates').textContent = 'Not selected';
+            }
+        }
+        
+        // Add event listeners to update summary
+        document.getElementById('package').addEventListener('change', updateSummary);
+        document.getElementById('destination').addEventListener('change', updateSummary);
+        document.getElementById('travelers').addEventListener('change', updateSummary);
+        document.getElementById('startDate').addEventListener('change', updateSummary);
+        document.getElementById('endDate').addEventListener('change', updateSummary);
+        
+        // Form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const form = event.target;
+            
+            if (form.checkValidity() === false) {
+                form.classList.add('was-validated');
+            } else {
+                // Show success toast
+                const toast = new bootstrap.Toast(document.getElementById('successToast'));
+                toast.show();
+                
+                // Reset form after successful submission
+                setTimeout(() => {
+                    form.reset();
+                    form.classList.remove('was-validated');
+                    updateSummary();
+                }, 3000);
+            }
+        });
+        
+        // Initialize summary on page load
+        updateSummary();
+    </script>
+</body>
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - GoExplore Premium Travel Experiences</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/package.css">
+</head>
+<body>
+    <!-- Scroll to top button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Go<span>Explore</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destination.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="package.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-outline-custom book-now-btn"  id="book-btn2" href="travel.html">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content wow animate__animated animate__fadeInUp">
+                <h1>Travel Packages</h1>
+                <p>Curated journeys to the world's most breathtaking destinations</p>
+                <a href="#packages" class="btn btn-primary-custom me-2">Explore Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <div class="container">
+        <div class="filter-section wow animate__animated animate__fadeInUp">
+            <div class="row filter-row">
+                <div class="col-md-3 mb-3">
+                    <div class="filter-label">Destination</div>
+                    <select class="form-select">
+                        <option selected>Any Destination</option>
+                        <option>Europe</option>
+                        <option>Asia</option>
+                        <option>North America</option>
+                        <option>South America</option>
+                        <option>Africa</option>
+                        <option>Oceania</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="filter-label">Duration</div>
+                    <select class="form-select">
+                        <option selected>Any Duration</option>
+                        <option>3-5 Days</option>
+                        <option>7 Days</option>
+                        <option>10 Days</option>
+                        <option>14+ Days</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="filter-label">Budget</div>
+                    <select class="form-select">
+                        <option selected>Any Budget</option>
+                        <option>Economy ($500-$1,000)</option>
+                        <option>Comfort ($1,000-$2,500)</option>
+                        <option>Luxury ($2,500+)</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="filter-label">Sort By</div>
+                    <select class="form-select">
+                        <option selected>Popularity</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary-custom me-2"><i class="fas fa-filter me-2"></i>Apply Filters</button>
+                    <button class="btn btn-outline-custom"><i class="fas fa-sync-alt me-2"></i>Reset Filters</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Packages Grid -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Discover Amazing Journeys</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Handpicked experiences for your next adventure</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp">
+                    <div class="package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Italian Escape" class="package-img">
+                            <div class="package-badge">Best Seller</div>
+                        </div>
+                        <div class="package-body">
+                            <h4>Italian Escape</h4>
+                            <div class="package-meta">
+                                <span><i class="fas fa-clock me-1"></i> 10 Days</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> Europe</span>
+                            </div>
+                            <p>Explore Rome, Florence, and Venice with luxury accommodations and authentic experiences.</p>
+                            <div class="package-price">$2,499</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tropical Paradise" class="package-img">
+                            <div class="package-badge">Family Friendly</div>
+                        </div>
+                        <div class="package-body">
+                            <h4>Tropical Paradise</h4>
+                            <div class="package-meta">
+                                <span><i class="fas fa-clock me-1"></i> 7 Days</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> Bali</span>
+                            </div>
+                            <p>Private villa, spa treatments, and island tours in the heart of Bali's natural beauty.</p>
+                            <div class="package-price">$1,899</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Japan Adventure" class="package-img">
+                            <div class="package-badge">Cultural</div>
+                        </div>
+                        <div class="package-body">
+                            <h4>Japan Adventure</h4>
+                            <div class="package-meta">
+                                <span><i class="fas fa-clock me-1"></i> 14 Days</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> Asia</span>
+                            </div>
+                            <p>Explore Tokyo, Kyoto, and Osaka with authentic cultural experiences and culinary tours.</p>
+                            <div class="package-price">$3,299</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Greek Islands" class="package-img">
+                            <div class="package-badge">Honeymoon</div>
+                        </div>
+                        <div class="package-body">
+                            <h4>Greek Islands</h4>
+                            <div class="package-meta">
+                                <span><i class="fas fa-clock me-1"></i> 8 Days</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> Greece</span>
+                            </div>
+                            <p>Discover Santorini, Mykonos, and Crete with luxury stays and sunset cruises.</p>
+                            <div class="package-price">$2,199</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Safari Adventure" class="package-img">
+                            <div class="package-badge">Adventure</div>
+                        </div>
+                        <div class="package-body">
+                            <h4>Safari Adventure</h4>
+                            <div class="package-meta">
+                                <span><i class="fas fa-clock me-1"></i> 12 Days</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> Kenya</span>
+                            </div>
+                            <p>Experience wildlife in Maasai Mara, luxury tented camps, and cultural encounters.</p>
+                            <div class="package-price">$3,899</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Paris Getaway" class="package-img">
+                            <div class="package-badge">Limited Offer</div>
+                        </div>
+                        <div class="package-body">
+                            <h4>Paris Getaway</h4>
+                            <div class="package-meta">
+                                <span><i class="fas fa-clock me-1"></i> 5 Days</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> France</span>
+                            </div>
+                            <p>Romantic escape to the City of Lights with gourmet dining and Seine River cruise.</p>
+                            <div class="package-price">$1,499</div>
+                            <a href="#" class="btn btn-primary-custom w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-custom">Load More Packages</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages Carousel -->
+    <section class="featured-packages py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Featured Packages</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Our most popular travel experiences</p>
+                </div>
+            </div>
+            
+            <div class="swiper-container">
+                <div class="swiper featured-packages-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="package-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Paris" class="package-img">
+                                    <div class="package-badge">Featured</div>
+                                </div>
+                                <div class="package-body">
+                                    <h4>Paris & Champagne</h4>
+                                    <div class="package-meta">
+                                        <span><i class="fas fa-clock me-1"></i> 7 Days</span>
+                                        <span><i class="fas fa-map-marker-alt me-1"></i> France</span>
+                                    </div>
+                                    <p>City of Lights tour with exclusive Champagne region experience.</p>
+                                    <div class="package-price">$2,299</div>
+                                    <a href="#" class="btn btn-primary-custom w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="package-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tokyo" class="package-img">
+                                    <div class="package-badge">Featured</div>
+                                </div>
+                                <div class="package-body">
+                                    <h4>Japan Golden Route</h4>
+                                    <div class="package-meta">
+                                        <span><i class="fas fa-clock me-1"></i> 10 Days</span>
+                                        <span><i class="fas fa-map-marker-alt me-1"></i> Japan</span>
+                                    </div>
+                                    <p>Tokyo, Kyoto, Osaka with bullet train and cultural workshops.</p>
+                                    <div class="package-price">$3,499</div>
+                                    <a href="#" class="btn btn-primary-custom w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="package-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Alps" class="package-img">
+                                    <div class="package-badge">Featured</div>
+                                </div>
+                                <div class="package-body">
+                                    <h4>Swiss Alps Adventure</h4>
+                                    <div class="package-meta">
+                                        <span><i class="fas fa-clock me-1"></i> 8 Days</span>
+                                        <span><i class="fas fa-map-marker-alt me-1"></i> Switzerland</span>
+                                    </div>
+                                    <p>Mountain excursions, scenic train rides, and charming villages.</p>
+                                    <div class="package-price">$3,199</div>
+                                    <a href="#" class="btn btn-primary-custom w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="package-card">
+                                <div class="position-relative">
+                                    <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Greece" class="package-img">
+                                    <div class="package-badge">Featured</div>
+                                </div>
+                                <div class="package-body">
+                                    <h4>Greek Island Hopping</h4>
+                                    <div class="package-meta">
+                                        <span><i class="fas fa-clock me-1"></i> 9 Days</span>
+                                        <span><i class="fas fa-map-marker-alt me-1"></i> Greece</span>
+                                    </div>
+                                    <p>Santorini, Mykonos, and Crete with luxury catamaran cruise.</p>
+                                    <div class="package-price">$2,699</div>
+                                    <a href="#" class="btn btn-primary-custom w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Highlights -->
+    <section class="highlights-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Package Highlights</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">What makes our travel packages special</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4 wow animate__animated animate__fadeInUp">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>Premium Quality</h4>
+                        <p>Carefully selected accommodations, transportation, and experiences for the best travel experience.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h4>Small Groups</h4>
+                        <p>Intimate group sizes for a more personalized experience and better access to local culture.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Travel Protection</h4>
+                        <p>Comprehensive travel insurance included with every package for your peace of mind.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Authentic Cuisine</h4>
+                        <p>Curated dining experiences featuring local specialties and hidden culinary gems.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4>Local Experts</h4>
+                        <p>Knowledgeable local guides providing insights you won't find in guidebooks.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="1.0s">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Sustainable Travel</h4>
+                        <p>Eco-friendly practices and support for local communities in all our packages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title wow animate__animated animate__fadeIn">Package Categories</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Find the perfect journey for your travel style</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs justify-content-center mb-5" id="packageTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="honeymoon-tab" data-bs-toggle="tab" data-bs-target="#honeymoon" type="button" role="tab">Honeymoon</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab">Family</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="solo-tab" data-bs-toggle="tab" data-bs-target="#solo" type="button" role="tab">Solo Travel</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="adventure-tab" data-bs-toggle="tab" data-bs-target="#adventure" type="button" role="tab">Adventure</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="luxury-tab" data-bs-toggle="tab" data-bs-target="#luxury" type="button" role="tab">Luxury</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="packageTabsContent">
+                        <div class="tab-pane fade show active" id="honeymoon" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Santorini">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Santorini Romance</h5>
+                                            <p class="card-text">Private sunset cruise, luxury cave suite, and couples spa treatments.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">$2,899</span>
+                                                <span class="badge bg-primary">7 Days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Venice">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Venice Escape</h5>
+                                            <p class="card-text">Gondola serenade, private dining, and luxury hotel overlooking canals.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">$3,199</span>
+                                                <span class="badge bg-primary">5 Days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Maldives">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Maldives Paradise</h5>
+                                            <p class="card-text">Overwater bungalow, private island dinner, and snorkeling adventures.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">$4,299</span>
+                                                <span class="badge bg-primary">8 Days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="family" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Tokyo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Japan Family Adventure</h5>
+                                            <p class="card-text">Theme parks, cultural workshops, and kid-friendly dining experiences.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">$3,899</span>
+                                                <span class="badge bg-primary">10 Days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Orlando">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Orlando Theme Parks</h5>
+                                            <p class="card-text">VIP access to major attractions, character dining, and family resorts.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">$2,499</span>
+                                                <span class="badge bg-primary">7 Days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Swiss Alps">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Swiss Family Adventure</h5>
+                                            <p class="card-text">Scenic train rides, chocolate making workshops, and mountain excursions.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">$3,299</span>
+                                                <span class="badge bg-primary">9 Days</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4 wow animate__animated animate__fadeIn">Ready for Your Next Adventure?</h2>
+                    <p class="mb-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Our travel experts are ready to help you plan the perfect getaway</p>
+                    <a href="#" class="btn btn-primary-custom me-2 wow animate__animated animate__pulse" data-wow-delay="0.4s"><i class="fas fa-phone-alt me-2"></i>Call Our Experts</a>
+                    <a href="#" class="btn btn-outline-custom wow animate__animated animate__pulse" data-wow-delay="0.6s"><i class="fas fa-envelope me-2"></i>Customize a Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow animate__animated animate__fadeIn">
+                    <h2 class="mb-4">Never Miss a Deal</h2>
+                    <p class="mb-5">Subscribe to our newsletter and be the first to know about new destinations and exclusive offers</p>
+                    
+                    <form class="newsletter-form row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <button type="submit" class="btn btn-primary w-100 h-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">GoExplore</h3>
+                    <p>Creating unforgettable travel experiences since 2010. We specialize in crafting personalized journeys that go beyond the ordinary.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Destinations</a>
+                        <a href="#">Packages</a>
+                        <a href="#">Special Offers</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Booking Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-links">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@goexplore.com</p>
+                        <p><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 GoExplore Travel Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize WOW.js for scroll animations
+        new WOW().init();
+        
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+            
+            // Show/hide scroll-to-top button
+            if ($(this).scrollTop() > 300) {
+                $('.scroll-top').addClass('active');
+            } else {
+                $('.scroll-top').removeClass('active');
+            }
+        });
+        
+        // Scroll to top functionality
+        $('.scroll-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+        
+        // Smooth scrolling for anchor links
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top - 70,
+                },
+                500,
+                'linear'
+            );
+        });
+        
+        // Initialize Swiper
+        var swiper = new Swiper('.featured-packages-slider', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+        
+        // Package filter functionality
+        $('.filter-section .btn').click(function() {
+            $(this).addClass('active').siblings().removeClass('active');
+            // In a real application, this would filter the package grid
+            $('.package-card').fadeOut(300).fadeIn(300);
+        });
+    </script>
+</body>
+</html>
